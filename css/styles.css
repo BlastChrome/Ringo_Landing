@@ -2,7 +2,8 @@
 /* Global Styles */
 :root{
     --text-color: #EFF2F6; 
-    --cherry: #EA918D; 
+    --cherry: #EA918D;  
+    --film: rgba(51,51,51,0.4);
     
 }
 *{            
@@ -11,6 +12,7 @@
 } 
 
 body{
+    font-family:  'Lato', Arial, Helvetica, sans-serif;
     background: url(/imgs/White-city-bg.png) no-repeat; 
     background-size: cover; 
     background-position: center; 
@@ -18,7 +20,7 @@ body{
     overflow-x: hidden;
 } 
 .bg{
-    background: rgba(51,51,51,0.4);
+    background: var(--film);
     height: 100%;  
     color: var(--text-color); 
 
@@ -26,7 +28,8 @@ body{
 .container{
     max-width: 90%;
     margin: auto; 
-    grid-gap: 90px;
+    grid-gap: 90px; 
+   
 } 
 
 /* Global Styles END */ 
@@ -60,5 +63,59 @@ header{
     text-decoration: none;
 }
 #logo{
-    height: 1.5rem;
+    height: 1.8rem;
 }
+/* Header END */ 
+
+/* main */
+main{
+    display: flex; 
+    flex-direction: column; 
+} 
+main h1{
+    width: 85%;
+    margin: 4rem 0rem ; 
+    font-size: 2.5rem;
+} 
+
+.icons{
+    margin: 0 0 7rem 0;
+} 
+.icons div{ 
+    display: flex; 
+    align-items: center; 
+    margin:0 0 3rem  0; 
+  
+} 
+.icons svg{ 
+    margin: 0 2rem 0 0;
+}  
+.icons p{
+    line-height: 2rem;;
+    font-size: 1.2rem;
+}
+.icons span{ 
+    font-weight: 700;
+    display: block; 
+    font-size: 1.7rem;
+}
+/* main end */
+
+/* footer */ 
+
+footer{ 
+    background: var(--film);  
+} 
+
+footer img{
+    width: 83px; 
+    height: 50px; 
+
+}
+footer div{
+    display: flex; 
+} 
+footer h3 footer p{
+    display: block
+}
+/* footer end */
