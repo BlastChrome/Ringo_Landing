@@ -16,7 +16,7 @@ body{
     background: url(/imgs/White-city-bg.png) no-repeat; 
     background-size: cover; 
     background-position: center; 
-    height: 100%;  
+    height: 100%; 
     overflow-x: hidden;
 } 
 .bg{
@@ -26,9 +26,9 @@ body{
 
 } 
 .container{
-    max-width: 90%;
+    width: 90%;
+    max-width: 1440px;
     margin: auto; 
-    grid-gap: 90px; 
    
 } 
 
@@ -49,12 +49,12 @@ header{
 
 .nav-links{
     width: 100%; 
-    background: red; 
+    background: var(--cherry);
     height: 100%;
     position: absolute; 
     left: 0; 
     top: 0; 
-    transform: translateX(100%); 
+    transform: translateX(110%); 
     list-style: none;    
 } 
 
@@ -118,17 +118,13 @@ footer div{
     align-items: center;
 }  
 
-/* footer div img{
-    margin-right: 2rem; 
-    height: auto; 
-    width: 25%;
-} */
  
 footer div p{
     text-transform: uppercase;
     line-height: 2.2rem; 
     font-size: 1.2rem;
-    width: 50%;
+    width: 60%; 
+    font-weight: 700;
 
 }
 footer div span{ 
@@ -146,4 +142,81 @@ footer div a{
 }
 
 
-/* footer end */
+/* footer end */ 
+
+
+/* Media Queries */ 
+@media only screen and (min-width: 768px){ 
+    .container{
+        width: 80%;
+    }
+    .hamburger{
+        display: none;
+    } 
+
+    .nav-links{
+        position: initial; 
+        transform: translateX(0%); 
+        display: flex; 
+        justify-content: space-between;  
+        width: 20%;  
+        background: transparent; 
+        font-size: 1.2rem;
+    }  
+    .nav-link{
+        margin: 0 1.3rem;
+    }
+    .login-btn{
+        background: var(--cherry); 
+        padding: .4rem 1.5rem;
+    }  
+
+    main h1{
+        font-size: 4.3rem; 
+        width: 60%;
+    }
+
+    .icons{
+        display: flex;  
+        margin: 0 0 22rem 0;
+    } 
+    .icons div{
+        margin: 0 2rem 0 0;
+    } 
+    footer{
+        display: flex; 
+        justify-content: space-between;
+        
+    }   
+    
+    .features{
+        /* margin: 0 10rem 0 0;  */
+        /* background-color: red;  */
+        display: flex; 
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    footer img{
+        width: 10rem; 
+        height: auto;
+        /* margin: 0 10rem 0 0; */
+    } 
+
+      footer div p{
+        text-transform: uppercase;
+        line-height: 2.2rem; 
+        font-size: 1.2rem;
+        width: 60%; 
+        font-weight: 700;
+    }
+
+    .footer-cover{
+        background: var(--film);
+        width: 90%;
+        max-width: 1440px; 
+        margin: 0 0 0 auto;
+    }
+
+
+}
