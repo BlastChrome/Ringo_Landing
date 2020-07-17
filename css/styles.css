@@ -1,0 +1,64 @@
+
+/* Global Styles */
+:root{
+    --text-color: #EFF2F6; 
+    --cherry: #EA918D; 
+    
+}
+*{            
+    padding: 0; 
+    margin: 0;    
+} 
+
+body{
+    background: url(/imgs/White-city-bg.png) no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    height: 100%;  
+    overflow-x: hidden;
+} 
+.bg{
+    background: rgba(51,51,51,0.4);
+    height: 100%;  
+    color: var(--text-color); 
+
+} 
+.container{
+    max-width: 90%;
+    margin: auto; 
+    display: grid; 
+} 
+
+/* Global Styles END */ 
+
+
+/* HEADER */
+header{ 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    min-height: 15vh; 
+} 
+
+.hamburger{
+    cursor: pointer;
+}
+
+.nav-links{
+    width: 100%; 
+    background: red; 
+    height: 100%;
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    transform: translateX(100%); 
+    list-style: none;    
+} 
+
+.nav-links a{ 
+    color: var(--text-color); 
+    text-decoration: none;
+}
+#logo{
+    height: 1.5rem;
+}
