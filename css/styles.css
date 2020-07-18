@@ -28,7 +28,7 @@ body{
 .container{
     width: 90%;
     max-width: 1440px;
-    margin: auto; 
+    margin: 0 auto; 
    
 } 
 
@@ -112,10 +112,10 @@ footer img{
     height: 50px; 
     margin-right: 2rem;
 }
-footer div{
+footer div{ 
     display: flex;   
-    padding: 1rem;
-    align-items: center;
+    padding: 1rem; 
+
 }  
 
  
@@ -178,38 +178,37 @@ footer div a{
 
     .icons{
         display: flex;  
-        margin: 0 0 22rem 0;
+        margin: 0 0 12rem 0;
     } 
     .icons div{
         margin: 0 2rem 0 0;
     } 
     footer{
         display: flex; 
-        justify-content: space-between;
-        
-    }   
-    
-    .features{
-        /* margin: 0 10rem 0 0;  */
-        /* background-color: red;  */
-        display: flex; 
-        justify-content: space-between;
-        width: 100%;
-    }
+    }    
+
 
     footer img{
         width: 10rem; 
         height: auto;
-        /* margin: 0 10rem 0 0; */
+
     } 
 
-      footer div p{
+      footer div p{ 
         text-transform: uppercase;
         line-height: 2.2rem; 
         font-size: 1.2rem;
         width: 60%; 
         font-weight: 700;
+    }  
+    .features{
+        align-items: flex-start;
+
+    } 
+    .link-container{
+        margin: .25rem 0 0 15rem ;
     }
+
 
     .footer-cover{
         background: var(--film);
